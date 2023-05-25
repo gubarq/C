@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+void f1(void);
+void func(void);
+void check(void);
+
+int global;
+
+
+int main()
+
+{
+
+	global = 42;
+	int y = 10;
+	func();
+	printf("func->global = %d\n", global);
+	f1();
+	check();
+	check();
+	check();
+}
+
+
+void func(void) {
+	printf("main-> global = %d\n", global);
+
+		global = 1;
+}
+void check(void) {
+	static int x;
+	printf("static = %d\t", x);
+
+	x += 5;
+}
+

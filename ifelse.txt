@@ -1,0 +1,36 @@
+int first;
+	int second;
+	printf("Input first number:");
+	scanf_s("%d", &first);
+	printf("Input second number:");
+	scanf_s("%d", &second);
+
+	if (first<100) {
+		if (first*first < second)
+		{
+			printf("%d < %d True", first, second);
+			
+		}
+	}
+	else
+	{
+		if (second*second < first)
+		{
+			printf("%d < %d True", second, first);
+		}
+	}
+
+	if (first < 100 && second < 100)
+	{
+		first = first + 10;
+		second = second + 20;
+		if (first < second)
+		{
+			printf("%d<%d True", first, second);
+		}
+	}
+	else
+	{
+		printf("%d and %d > 100 True", first, second);
+	}
+	

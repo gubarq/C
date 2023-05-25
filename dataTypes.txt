@@ -1,0 +1,8 @@
+int a = 1;
+	double b = 1.22;
+	float c = 1.22;
+	char d = 'A';
+	printf("%i\n", a);
+	printf("%f\n", b);
+	printf("%g\n", c);
+	printf("%c\n", d);

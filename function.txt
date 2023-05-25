@@ -1,0 +1,54 @@
+
+#include <stdio.h>
+
+void f1() {
+	printf("This is a function.\n");
+}
+void f2() {
+	int a, b;
+	printf("Enter first number:\n");
+	scanf_s("%d", &a);
+	printf("Enter second number:\n");
+	scanf_s("%d", &b);
+	
+	int sum = a + b;
+	printf("The sum is %d", sum);
+}
+void f3() {
+	int a, b;
+	printf("Enter first number:\n");
+	scanf_s("%d", &a);
+	printf("Enter second number:\n");
+	scanf_s("%d", &b);
+
+	if (a > b) {
+		printf("The biggest is %d", a);
+	}
+	else if (b > a) {
+		printf("The biggest is &d", b);
+	}
+	else {
+		printf("Numbers are equal.");
+	}
+}
+void f4() {
+	int a, b;
+	printf("Enter first number:\n");
+	scanf_s("%d", &a);
+	printf("Enter second number:\n");
+	scanf_s("%d", &b);
+	int sum = 1;
+	for (int i = 1; i <= b; i++)
+	{
+		sum *= (a * i);
+	}
+	printf("%d", sum);
+}
+int main()
+{
+	f1();
+	f2();
+	f3();
+	/*f4();*/
+}
+

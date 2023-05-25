@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+extern int global;
+void f1() {
+	global = 101;
+	printf("f1 ->global %d\n", global);
+}

@@ -1,0 +1,110 @@
+
+#include <stdio.h>
+
+void f1() {
+	int a, b;
+	printf("Insert 2 numbers:");
+	scanf_s("%d %d", &a, &b);
+	if (a + b < 10)
+	{
+		printf("It's lower than 10");
+	}
+	else if(a+b > 10 ) {
+		
+		printf("It's higher than 10");
+	}
+	else
+	{
+		printf("It's equal to 10");
+	}
+}
+
+void f2(int grade) {
+	switch (grade)
+	{
+	case 2:
+		printf("Poor");
+		break;
+	case 3:
+		printf("Fair");
+		break;
+	case 4:
+		printf("Good");
+		break;
+	case 5:
+		printf("Very Good");
+		break;
+	case 6:
+		printf("Excellent");
+		break;
+	
+	default:
+		printf("Invalid");
+		break;
+	}
+}
+void f3() {
+	int sum = 0;
+	for (int i = 1; i < 11; i++)
+	{
+		sum += i;
+	}
+	printf("%d", sum);
+}
+void f4(int n) {
+	for (int i = 1; i < 11; i++)
+	{
+		int sum = n * i;
+		printf("%d x %d = %d\n",n,i,sum);
+		sum = 0;
+	}
+
+}
+
+void f5(int n) {
+	int sum = 1;
+	for (int i = 1; i <= n ; i++)
+	{
+		sum *= i;
+	}
+	printf("%d", sum);
+}
+void f6() {
+	char str[] = "Hello world";
+	for (int i = 0; i < 11; i++)
+	{
+		char a = str[i];
+		printf("%c\n",a);
+		
+	}
+}
+void f7() {
+	printf("F	C\n");
+	int f = 0;
+	int c = 0;
+	printf("%d	%d\n", f, c);
+	while (f < 300)
+	{
+		f += 20;
+		c = (f - 32) * 0.5556;
+		printf("%d	%d\n", f, c);
+	}
+}
+
+int main()
+{
+	f1();
+	int a;
+	printf("Enter grade: ");
+	scanf_s("%d", &a);
+	f2(a);
+	f3();
+	int a;
+	printf("Enter number: ");
+	scanf_s("%d", &a);
+	f4(a);
+	f5(a);
+	f6();
+	f7();
+}
+

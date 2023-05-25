@@ -1,0 +1,23 @@
+//Първа//
+for (int i = 0; i < 101; i++)
+	{
+		if (i % 4 == 0 && i % 8 == 0) {
+			printf("%d is divisable by 4\n", i);
+			printf("%d is divisable by 8\n", i);
+			continue;
+		}
+		if (i % 4 == 0)
+		{
+			printf("%d is divisable by 4\n",i);
+			continue;
+		}
+		
+		
+		printf("%d\n", i);
+	}
+//Втора//
+	for (int i = 65; i < 91; i++)
+	{
+		int low = i + 32;
+		printf("%c %c\n", i, low);
+	}
